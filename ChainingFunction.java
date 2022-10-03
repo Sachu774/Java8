@@ -8,7 +8,7 @@ public class ChainingFunction {
 		//Function 1
 		Function<String,Integer> func=x->x.length();
 		
-		//Function 2
+		//Chaining Function
 		Function<Integer, Integer> func2=x->x*2;
 		int doubl=func.andThen(func2).apply("This will do something");
 		System.out.println(doubl);
